@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Page</title>
+    <script src="First.js"></script>
+</head>
+<body>
+<script>
+    changeColor();
+</script>
+<div id='div'>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>Your preferred color is:</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="color" value="red" id="Red">
+                    <label for="Red">Red</label>
+                    <input type="radio" name="color" value="yellow" id="Yellow">
+                    <label for="Yellow">Yellow</label>
+                    <input type="radio" name="color" value="green" id="Green">
+                    <label for="Green">Green</label>
+                    <input type="radio" name="color" value="blue" id="Blue">
+                    <label for="Blue">Blue</label>
+                    <input type="radio" name="color" value="cyan" id="Cyan">
+                    <label for="Cyan">Cyan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save" onclick="setCookie('FavColor',color.value)"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+    visibility();
+</script>
+<button onclick="removeFavColor();">
+    Change FavColor cookie
+</button>
+</body>
+</html>
